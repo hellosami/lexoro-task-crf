@@ -124,19 +124,19 @@
     <form class="form" method="POST">
         <span>Room: </span>
         <select name="room-name" id="cars">
-            <option value="1">Office 1</option>
-            <option value="2">Office 2</option>
-            <option value="3">Office 3</option>
-            <option value="4">Big office</option>
-            <option value="5">Boss office</option>
-            <option value="6">Additional office</option>
+            <option value="1-1">Office 1</option>
+            <option value="2-1">Office 2</option>
+            <option value="3-2">Office 3</option>
+            <option value="4-3">Big office</option>
+            <option value="5-1">Boss office</option>
+            <option value="6-2">Additional office</option>
         </select>
         <br><br>
         <span>Date: </span>
-        <input type="date" id="date" name="booking-date">
+        <input type="date" id="date" name="booking-date" required>
         <br><br>
-        <span>You name: </span>
-        <input type="text" name="name">
+        <span>Your Name: </span>
+        <input type="text" name="name" placeholder="John Doe" required>
         <br><br>
         <input class="btn" type="submit" name="btn-book" value="Book">
     </form>
@@ -145,7 +145,7 @@
 
     <span>Get Capacity</span>
     <form class="form" action="" method="POST">
-        <input type="date" id="date" name="set-date">
+        <input type="date" id="date" name="set-date" required>
         <br><br>
         <input class="btn" type="submit" name="btn-capacity" value="Get Capacity">
     </form>
