@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 21, 2021 at 03:34 PM
+-- Generation Time: Feb 21, 2021 at 03:50 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.2.34
 
@@ -34,18 +34,6 @@ CREATE TABLE `booking` (
   `BookingDate` varchar(255) NOT NULL,
   `MaxWorkPlace` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `booking`
---
-
-INSERT INTO `booking` (`BookingID`, `RoomID`, `BookedBy`, `BookingDate`, `MaxWorkPlace`) VALUES
-(366, 1, 'Shanto', '2021-02-10', 1),
-(367, 2, 'Sami', '2021-02-10', 1),
-(368, 3, 'Molla', '2021-02-10', 2),
-(369, 3, 'Mili', '2021-02-10', 2),
-(370, 4, 'Nisha', '2021-02-10', 3),
-(371, 3, 'Sam', '2021-02-11', 2);
 
 -- --------------------------------------------------------
 
@@ -82,13 +70,6 @@ CREATE TABLE `user_info` (
   `username` varchar(255) NOT NULL,
   `pass` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `user_info`
---
-
-INSERT INTO `user_info` (`id`, `username`, `pass`) VALUES
-(26, 'shanto', '23+yb1XabCfZIaTuo5z2wA/tOuzYF875Vd0HGkqVUHM=');
 
 --
 -- Indexes for dumped tables
