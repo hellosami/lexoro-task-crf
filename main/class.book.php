@@ -55,6 +55,8 @@
 
                 $rid = (int) $split[0];
                 $max = (int) $split[1];
+                $rname = $split[2];
+
                 $isFull = false;
 
                 $text = "";
@@ -86,7 +88,7 @@
                             $stmt = self::$conn->prepare($sql);
                             $stmt->execute(['rid' => $rid, 'n' => $name, 'dt' => $dt, 'mwp' => $max]);
 
-                            echo "<script>alert('We booked successfully a place in room on $dt for you');</script>";
+                            echo "<script>alert('We booked successfully a place in $rname on $dt for you');</script>";
               
                         } else {
                             $text = $text . "Room is already booked out by ";
@@ -133,7 +135,7 @@
                         $stmt = self::$conn->prepare($sql);
                         $stmt->execute(['rid' => $rid, 'n' => $name, 'dt' => $dt, 'mwp' => $max]);
                      
-                        echo "<script>alert('We booked successfully a place in room on $dt for you');</script>";
+                        echo "<script>alert('We booked successfully a place in $rname on $dt for you');</script>";
                     }
 
                 } catch (PDOException $e) {

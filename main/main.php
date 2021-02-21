@@ -124,12 +124,12 @@
     <form class="form" method="POST">
         <span>Room: </span>
         <select name="room-name" id="cars">
-            <option value="1-1">Office 1</option>
-            <option value="2-1">Office 2</option>
-            <option value="3-2">Office 3</option>
-            <option value="4-3">Big office</option>
-            <option value="5-1">Boss office</option>
-            <option value="6-2">Additional office</option>
+            <option value="1-1-Office1">Office 1</option>
+            <option value="2-1-Office2">Office 2</option>
+            <option value="3-2-Office3">Office 3</option>
+            <option value="4-3-BigOffice">Big office</option>
+            <option value="5-1-BossOffice">Boss office</option>
+            <option value="6-2-AdditionalOffice">Additional office</option>
         </select>
         <br><br>
         <span>Date: </span>
